@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">prueba_kotlin</string>
+    <string name="hint_txt">Presione un número</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="number_0">0</string>
+    <string name="clear">Clear</string>
+    <string name="go">Go</string>
+
+    <string name="order">Order</string>
+    <string name="list_of_orders">List of orders</string>
+    <string name="datetime">Wednesday, December 31, 1969</string>
+    <string name="add_tip">Add Tip</string>
+    <string name="all">All</string>
+    <string name="toGo">ToGo</string>
+    <string name="dine_in">Dine In</string>
+    <string name="pickup">Pickup</string>
+    <string name="delivery">Delivery</string>
+
+
+    <string name="user_name">Nombre de usuario</string>
+    <string name="sub_totaL">Sub Total</string>
+    <string name="ticket_number">Número de Ticket</string>
+    <string name="orderDateTime">Fecha de orden</string>
+    <string name="updateOrder">Actualizar Orden</string>
+
+    <string name="msg_updateOrder">La orden se actualizó correctamente</string>
+    <string name="msg_username">Debe de ingresar un nombre</string>
+    <string name="msg_subtotal">Debe de ingresar un monto</string>
+    <string name="try_again">Intentar otra vez</string>
+    <string name="close">Cerrar</string>
+    <string name="no_internet">Algo salió mal, comprueba tu conexión a Internet e inténtalo de nuevo.</string>
+    <string name="alert_no_connection">¡Sin internet!</string>
+    <string name="network_error">Algo salió mal, comprueba tu conexión a Internet e inténtalo de nuevo.</string>
+    <string name="network_not_avaliable">Red no disponible</string>
+</resources>

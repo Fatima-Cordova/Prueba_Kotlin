@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".ui.DetailsOrders">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/user_name"
+            android:id="@+id/et_user_name_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ti_user_name"
+        android:id="@+id/ti_subtotal_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/sub_totaL"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_sub_total_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ti_subtotal_update"
+        android:id="@+id/ti_ticket_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/ticket_number"
+            android:maxLength="10"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_ticket_number_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ti_ticket_number"
+        android:id="@+id/ti_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/orderDateTime"
+            android:maxLength="10"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_order_time_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ti_order_time"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_update_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/updateOrder"
+        app:cornerRadius="10dp">
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

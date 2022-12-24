@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    tools:context=".ui.ActivityRecall">
+
+    <LinearLayout
+        android:id="@+id/ll_add_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/add_tip"
+            app:icon="@drawable/ic_baseline_playlist_add_circle_24">
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list_orden"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/ll_add_trip"
+        android:background="@color/md_grey_300"
+        android:padding="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/list_of_orders"
+            android:textAlignment="textStart">
+
+        </TextView>
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/datetime"
+            android:gravity="end"
+            android:layout_gravity="end">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_list_orden"
+        android:layout_marginEnd="15dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Type the orden number">
+
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        tools:listitem="@layout/order_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_options"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/designer">
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:text="@string/all"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="1dp" />
+
+        <Button
+            android:id="@+id/btn_togo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_green_400"
+            android:text="@string/toGo"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="1dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_dine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_blue_grey_400"
+            android:text="@string/dine_in"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="1dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_orange_400"
+            android:text="@string/pickup"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="1dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_blue_400"
+            android:text="@string/delivery"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="1dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:iconGravity="textStart"
+            app:icon="@drawable/ic_baseline_person"
+            android:padding="1dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/designer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/md_light_blue_900"
+        android:padding="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_light_blue_900"
+            app:icon="@drawable/ic_baseline_close_24">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content">
+        </View>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/md_light_blue_900"
+            android:padding="5dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            app:icon="@drawable/ic_baseline_check"
+            app:iconGravity="textEnd">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
